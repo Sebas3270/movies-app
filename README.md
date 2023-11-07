@@ -2,6 +2,8 @@
 
 A movies app that consumes movie db api to show data
 
+![Movies App](https://github.com/Sebas3270/movies-app/assets/88170325/da2a4aeb-30ba-482c-89ed-0016b192b9f0)
+
 ## Installation
 
 1. Clone this project
