@@ -46,59 +46,6 @@ class MovieScreenState extends ConsumerState<MovieScreen> {
       );
     }
 
-
-    // return Scaffold(
-    //   appBar: AppBar(
-    //     foregroundColor: Colors.white,
-    //     actions: [
-    //       Icon(EvaIcons.bookmarkOutline)
-    //     ],
-    //   ),
-    //   body: SingleChildScrollView(
-    //     child: Padding(
-    //       padding: const EdgeInsets.symmetric(horizontal: 10.0),
-    //       child: Column(
-    //         crossAxisAlignment: CrossAxisAlignment.start,
-    //         children: [
-    //           ClipRRect(
-    //             borderRadius: BorderRadius.circular(10),
-    //             child: Image.network(
-    //               movie.backdropPath,
-    //               loadingBuilder: (context, child, loadingProgress) {
-    //                 if(loadingProgress != null){
-    //                   return const SizedBox.expand(child: CircularProgressIndicator());
-    //                 }
-    //                 return child;
-    //               },
-    //             ),
-    //           ),
-      
-    //           const SizedBox(height: 20,),
-      
-    //           Text(
-    //             movie.title,
-    //             style: const TextStyle(
-    //               fontSize: 35,
-    //               fontWeight: FontWeight.bold,
-    //             ),
-    //           ),
-
-    //           const SizedBox(height: 10,),
-      
-    //           Text(
-    //             movie.overview,
-    //             style: const TextStyle(
-    //               fontSize: 15,
-    //             ),
-    //           ),
-              
-    //         ],
-    //       ),
-    //     ),
-    //   ),
-    // );
-
-
     return Scaffold(
       // appBar: AppBar(),
       body: CustomScrollView(
@@ -185,7 +132,7 @@ class MovieScreenState extends ConsumerState<MovieScreen> {
 
                     FilledButton.icon(
                       style: const ButtonStyle(
-                        minimumSize: MaterialStatePropertyAll(Size.fromHeight(40)),
+                        minimumSize: WidgetStatePropertyAll(Size.fromHeight(40)),
                       ),
                       onPressed: () {
                         

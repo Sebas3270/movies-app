@@ -33,7 +33,7 @@ class MovieDbResponse {
     );
 
     Map<String, dynamic> toMap() => {
-        "dates": dates != null ? dates!.toMap() : null,
+        "dates": dates?.toMap(),
         "page": page,
         "results": List<dynamic>.from(results.map((x) => x.toMap())),
         "total_pages": totalPages,
